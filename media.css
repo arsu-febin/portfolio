@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;          /* to avoid overflow of the contents for responsive pages*/
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background: url(https://marketplace.canva.com/EAFJd1mhO-c/1/0/450w/canva-colorful-watercolor-painting-phone-wallpaper-quP71eOhjTI.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+
+p{
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.flex-container{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.flex-item{
+    
+    width: 300px;
+    margin: 20px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(247, 151, 199);
+    padding: 1.3rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    top:0%;
+}
+.contents{
+    margin-top: 100px;
+    
+    }
+.logo{
+        text-decoration: none;
+        font-size: 30px;
+        color: rgb(56, 1, 1);
+        font-weight: 1000;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size:20px ;
+    font-weight: 700;
+    color: rgb(56, 1, 1);
+    margin-left: 20px;
+}
+.header .icons{
+    font-size: 2.8rem;
+    color:rgb(56, 1, 1);
+    position:absolute;
+    cursor: pointer;
+    right: 4%;
+    display:none;
+    top:20px;
+}
+#check{
+    display: none;
+    
+}
+.header .close-icon{
+    font-size: 2.8rem;
+    color:rgb(56, 1, 1);
+    position:absolute;
+    cursor: pointer;
+    right: 4%;
+    top:20px;
+    display:none;
+}
+
+/* Break points 
+480px--sm    small screen
+768px--md    medium screen
+992px--lg    large screen
+1280--xl     extra large screen
+*/
+
+@media (max-width:768px){
+    p{
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    .flex-container{
+        flex-wrap: wrap;
+    }
+    
+     .header .icons{
+        display:flex;
+    }
+   .nav-bar{
+        position: absolute;
+        top:100%;
+        left:0%;
+        width: 100%;
+        background-color: burlywood;
+        display: none;
+   }
+  .nav-bar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 8px 0px;
+   }
+  #check:checked~.nav-bar{
+        display: block;
+  }
+  #check:checked~label .icons{
+        display: none;
+
+  }
+  #check:checked~ label .close-icon{ 
+        display: flex;
+  }
+
+    
+}
+
+
+@media (max-width:992px){
+.header{
+    padding: 1.3rem 5%;
+}
+}

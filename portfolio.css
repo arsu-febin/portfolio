@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+#container{
+    width:100%;
+    height: 100vh;        /* vh-vew port display */
+    position: relative;
+}
+nav{
+
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.logo{
+    height:100px ;
+    width:150px;
+}
+.list-items{
+    display: inline;
+    margin:0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+#home-contents{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+#uname{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+#lname{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: brown;
+}
+#user-details{
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.downld{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+}
+/* pseudo class */
+.links:hover{
+    color:coral;
+    text-decoration: underline;
+}
+#home-images{
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px; 
+    
+}
+ .group1{
+    position: absolute;
+    
+     height: 100%; 
+    bottom: 0px;
+     
+    left:50%; 
+     transform: translateX(-50%);
+    transition:bottom 2s,left 1s; 
+    } 
+#home-images:hover #shape{
+bottom:100px;
+}
+#home-images:hover #girl{
+    left:40%;
+}
+
+#about{
+    margin:20% 8% 0% 8%;
+}
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sub-head{
+font-size: 20px;
+color: blue;
+}
+.section-body{
+    display: flex;
+    align-items: center;
+}
+#about-image>img{
+    width:400px;
+    
+}
+.about-content{
+    font-size: 20px;
+    text-align: justify;
+    line-height:1.5;
+    padding:40px;
+
+}
+.information{
+    margin-top: 20px;
+}
+.info-box{
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+} 
+ .info-box>span{
+    margin-left:20px;
+} 
+ #skills{
+    margin:8% 8% 0% 8%;
+}
+ .skill-content{
+    display: grid;
+     grid-template-columns:repeat(2,1fr) ; /* or  grid-template-columns:repeat(2,1fr) */
+     align-items: center;
+     margin-top: 20px;
+     gap:2rem;
+}
+.skillimg{
+    width: 100%;
+    
+
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 0rem;
+    position:relative;
+}
+.base-bar{
+width:100% ;
+height:0.5rem ;
+border-radius: 6px;
+background-color: black;
+position: absolute;
+bottom:0px;
+}
+.html-bar{
+width:93%;
+background-color: brown;
+}  
+
+.css-bar{
+        width:85%;
+        background-color: brown;
+        } 
+.js-bar{
+        width:83%;
+        background-color: brown;
+    } 
+    .angular-bar{
+        width:93%;
+        background-color: brown;
+        } 
+
+#contacts{
+    margin:8%
+}
+.icon-collection{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:40px;
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: burlywood;
+    margin:0px 10px;
+    }
+
+.brand{
+    color:black;
+    font-size: 22px;
+}  
+.brand:hover{
+    color:white;
+}  
+.icons:hover{
+    
+background-image: linear-gradient(to bottom right,yellow,orange,red);
+                animation:rotate 2s;
+
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+        
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+
+}
+#copyright{
+    text-align: center;
+    font-weight: bold;
+}
+.arrow-up{
+    float:right;
+    margin:-40px 30px 30px 0px;
+}
+
+/* html property */
+html{
+    scroll-behavior: smooth;
+}
+
+/* to edit scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-track{
+
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 10px;
+}
